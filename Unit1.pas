@@ -34,26 +34,26 @@ implementation
 
 // Procedure para arredondar os cantos de um componente específico
 procedure TForm1.ArredondaCantos(Component: TWinControl; XRadius, YRadius: Integer);
-var
-  Rgn: HRGN;
-begin
-  Rgn := CreateRoundRectRgn(0, 0, Component.Width, Component.Height, XRadius, YRadius);
-  SetWindowRgn(Component.Handle, Rgn, True);
-end;
+  var
+    Rgn: HRGN;
+  begin
+    Rgn := CreateRoundRectRgn(0, 0, Component.Width, Component.Height, XRadius, YRadius);
+    SetWindowRgn(Component.Handle, Rgn, True);
+  end;
 
 // Procedure para configurar o arredondamento dos componentes
 procedure TForm1.ConfigurarArredondamento;
-begin
-  ArredondaCantos(Button1, 20, 20); // Arredondamento para Button1 com raio de 20x20
-  ArredondaCantos(Panel1, 20, 20);  // Arredondamento para Panel1 com raio de 20x20
-  ArredondaCantos(ComboBox1, 10, 10); // Exemplo de arredondamento para ComboBox1 com raio de 10x10 (personalizável)
-  ArredondaCantos(GroupBox1, 20, 20); // Exemplo de arredondamento para v com raio de 20x20 (personalizável)
-  ArredondaCantos(Edit1, 10, 10);     // Exemplo de arredondamento para Edit1 com raio de 10x10 (personalizável)
-end;
+  begin
+    ArredondaCantos(Button1, 20, 20); // Arredondamento para Button1 com raio de 20x20
+    ArredondaCantos(Panel1, 20, 20);  // Arredondamento para Panel1 com raio de 20x20
+    ArredondaCantos(ComboBox1, 10, 10); // Exemplo de arredondamento para ComboBox1 com raio de 10x10 (personalizável)
+    ArredondaCantos(GroupBox1, 20, 20); // Exemplo de arredondamento para v com raio de 20x20 (personalizável)
+    ArredondaCantos(Edit1, 10, 10);     // Exemplo de arredondamento para Edit1 com raio de 10x10 (personalizável)
+  end;
 
 procedure TForm1.FormShow(Sender: TObject);
-begin
-  ConfigurarArredondamento; // Chama a configuração de arredondamento ao iniciar o formulário
-end;
+    begin
+      ConfigurarArredondamento; // Chama a configuração de arredondamento ao iniciar o formulário
+    end;
 
 end.
