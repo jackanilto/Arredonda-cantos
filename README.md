@@ -41,14 +41,14 @@ A procedure usa CreateRoundRectRgn, da API do Windows, para criar uma região re
 
 delphi
 `
-procedure TForm1.ConfigurarArredondamento;
-begin
-  ArredondaCantos(Button1, 20, 20);   // Aplica raio 20x20 a Button1
-  ArredondaCantos(Panel1, 20, 20);    // Aplica raio 20x20 a Panel1
-  ArredondaCantos(ComboBox1, 10, 10); // Aplica raio 10x10 a ComboBox1
-  ArredondaCantos(GroupBox1, 20, 20); // Aplica raio 20x20 a GroupBox1
-  ArredondaCantos(Edit1, 10, 10);     // Aplica raio 10x10 a Edit1
-end;`
+##### procedure TForm1.ConfigurarArredondamento;
+##### begin
+#####   ArredondaCantos(Button1, 20, 20);   // Aplica raio 20x20 a Button1
+#####   ArredondaCantos(Panel1, 20, 20);    // Aplica raio 20x20 a Panel1
+#####   ArredondaCantos(ComboBox1, 10, 10); // Aplica raio 10x10 a ComboBox1
+#####   ArredondaCantos(GroupBox1, 20, 20); // Aplica raio 20x20 a GroupBox1
+#####   ArredondaCantos(Edit1, 10, 10);     // Aplica raio 10x10 a Edit1
+##### end;`
 
 A ConfigurarArredondamento chama ArredondaCantos para cada componente que deseja arredondar, passando os componentes específicos e os valores de raio desejados.
 
@@ -56,10 +56,10 @@ A ConfigurarArredondamento chama ArredondaCantos para cada componente que deseja
 
 delphi
 `
-procedure TForm1.FormShow(Sender: TObject);
-begin
-  ConfigurarArredondamento;
-end;`
+##### procedure TForm1.FormShow(Sender: TObject);
+##### begin
+#####   ConfigurarArredondamento;
+##### end;`
 
 Este evento é executado quando o formulário é mostrado pela primeira vez. Ele chama ConfigurarArredondamento, aplicando o arredondamento aos componentes conforme configurado.
 
@@ -78,7 +78,7 @@ Para adicionar arredondamento a um novo componente, adicione a chamada em Config
 
 delphi
 `
-ArredondaCantos(NovoComponente, 15, 15);`
+##### ArredondaCantos(NovoComponente, 15, 15);`
 
 Substitua NovoComponente pelo nome do componente desejado e ajuste os valores de raio conforme necessário.
 
