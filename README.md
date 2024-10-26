@@ -81,3 +81,5 @@ Substitua NovoComponente pelo nome do componente desejado e ajuste os valores de
 
 ## Conclusão
 Este exemplo fornece uma abordagem simples e eficaz para adicionar cantos arredondados em componentes visuais no Delphi. É uma ótima forma de melhorar a aparência da interface do usuário, dando aos componentes um toque moderno e personalizado.
+
+!Imagem(https://imgur.com/UK4NdCR)
