@@ -24,12 +24,12 @@ O código consiste em duas procedures principais dentro da classe TForm1:
 delphi
 `
 procedure TForm1.ArredondaCantos(Component: TWinControl; XRadius, YRadius: Integer);
-var
-  Rgn: HRGN;
-begin
-  Rgn := CreateRoundRectRgn(0, 0, Component.Width, Component.Height, XRadius, YRadius);
-  SetWindowRgn(Component.Handle, Rgn, True);
-end;`
+#var
+#  Rgn: HRGN;
+#begin
+#  Rgn := CreateRoundRectRgn(0, 0, Component.Width, Component.Height, XRadius, YRadius);
+#  SetWindowRgn(Component.Handle, Rgn, True);
+#end;`
 
 ## Este método recebe três parâmetros:
 
