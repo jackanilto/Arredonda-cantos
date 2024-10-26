@@ -1,4 +1,4 @@
-#### **Arredondamento De Cantos Em Componentes Delphi**
+## **Arredondamento De Cantos Em Componentes Delphi**
 - Este projeto em Delphi apresenta uma maneira de aplicar cantos arredondados em componentes visuais que herdam de TWinControl, utilizando a API do Windows. O código define uma classe TForm1 com métodos específicos para configurar o arredondamento dos cantos dos componentes em um formulário.
 
 #### Estrutura e Funcionalidade do Código
