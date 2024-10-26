@@ -20,6 +20,7 @@ O código consiste em duas procedures principais dentro da classe TForm1:
 **ConfigurarArredondamento:** Define quais componentes serão arredondados e seus valores de raio.
 ## Métodos e Descrição
 **1. ArredondaCantos**
+
 delphi
 `
 procedure TForm1.ArredondaCantos(Component: TWinControl; XRadius, YRadius: Integer);
@@ -37,6 +38,7 @@ XRadius e YRadius: Especificam os raios horizontais e verticais dos cantos arred
 A procedure usa CreateRoundRectRgn, da API do Windows, para criar uma região retangular com cantos arredondados. O SetWindowRgn então aplica esta região ao componente especificado.
 
 **2. ConfigurarArredondamento**
+
 delphi
 `
 procedure TForm1.ConfigurarArredondamento;
@@ -51,6 +53,7 @@ end;`
 A ConfigurarArredondamento chama ArredondaCantos para cada componente que deseja arredondar, passando os componentes específicos e os valores de raio desejados.
 
 **3. FormShow**
+
 delphi
 `
 procedure TForm1.FormShow(Sender: TObject);
