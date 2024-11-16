@@ -92,4 +92,3 @@ Este projeto está licenciado sob a **MIT License**. Consulte o arquivo `LICENSE
 
 ---
 
-Este formato é funcional e permanece estilizado no GitHub sem a necessidade de códigos HTML. 😊
